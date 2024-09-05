@@ -1,5 +1,6 @@
 //? Create a simple calculator to perform basic arithmetic operations (+, -, *, /).
 #include <iostream>
+#include<iomanip> //for setting precision
 using namespace std;
 int main()
 {
