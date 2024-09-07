@@ -4,7 +4,6 @@
 #include <iostream>
 #include <string.h>
 #include <cstdlib>
-
 using namespace std;
 
 static int p = 0;

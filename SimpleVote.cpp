@@ -1,6 +1,5 @@
 //? Build a system to record votes for 3-5 candidates and display the winner.
 
-
 //* Improvement:-(1)Input Validation (2)Tie Handling
 #include <iostream>
 #include <vector>
