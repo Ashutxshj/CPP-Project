@@ -3,11 +3,19 @@
 #include <vector>
 #include <unordered_map>
 using namespace std;
-int winner(unordered_map<string, int> a)
+string winner(unordered_map<string, int> a)
 {
-for(auto x:a){
-
-}
+    int MaxVotes = 0;
+    string WinningCandi;
+    for (auto x : a)
+    {
+        if (x.second > MaxVotes)
+        {
+            MaxVotes=x.second;
+            WinningCandi=x.first;
+        }
+    }
+    return WinningCandi;
 }
 int main()
 {
