@@ -22,6 +22,10 @@ public:
     }
     string withdrawAmount(int amount)
     {
+        if (amount > Balance)
+        {
+            return "Insufficient balance!";
+        }
         Balance -= amount;
         return "Amount Withdrawn: " + to_string(amount);
     }
@@ -73,5 +77,5 @@ int main()
         cout << "Invalid Input" << endl;
         break;
     }
-    cout << "---------------------------------------------------------THE END-------------------------------------------------------------------";
+    cout << "-------------------------------------------------------THE END-----------------------------------------------------------------";
 }
