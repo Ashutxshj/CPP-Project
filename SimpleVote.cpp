@@ -1,4 +1,7 @@
 //? Build a system to record votes for 3-5 candidates and display the winner.
+
+
+//* Improvement:-(1)Input Validation (2)Tie Handling
 #include <iostream>
 #include <vector>
 #include <unordered_map>
@@ -11,8 +14,8 @@ string winner(unordered_map<string, int> a)
     {
         if (x.second > MaxVotes)
         {
-            MaxVotes=x.second;
-            WinningCandi=x.first;
+            MaxVotes = x.second;
+            WinningCandi = x.first;
         }
     }
     return WinningCandi;
